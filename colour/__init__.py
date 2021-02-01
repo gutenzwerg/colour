@@ -163,7 +163,8 @@ from .volume import (
     RGB_colourspace_visible_spectrum_coverage_MonteCarlo,
     RGB_colourspace_volume_MonteCarlo,
     RGB_colourspace_volume_coverage_MonteCarlo, is_within_macadam_limits,
-    is_within_mesh_volume, is_within_pointer_gamut, is_within_visible_spectrum)
+    macadam_limits, is_within_mesh_volume, is_within_pointer_gamut,
+    is_within_visible_spectrum)
 from .graph import describe_conversion_path, convert
 
 from colour.utilities import is_matplotlib_installed
@@ -328,7 +329,7 @@ __all__ += [
     'RGB_colourspace_visible_spectrum_coverage_MonteCarlo',
     'RGB_colourspace_volume_MonteCarlo',
     'RGB_colourspace_volume_coverage_MonteCarlo', 'is_within_macadam_limits',
-    'is_within_mesh_volume', 'is_within_pointer_gamut',
+    'macadam_limits', 'is_within_mesh_volume', 'is_within_pointer_gamut',
     'is_within_visible_spectrum'
 ]
 __all__ += ['describe_conversion_path', 'convert']
