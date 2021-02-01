@@ -3,6 +3,7 @@
 from .datasets import *  # noqa
 from . import datasets
 from .macadam_limits import is_within_macadam_limits
+from .macadam_limits import macadam_limits
 from .mesh import is_within_mesh_volume
 from .pointer_gamut import is_within_pointer_gamut
 from .spectrum import (generate_pulse_waves, XYZ_outer_surface,
@@ -15,6 +16,7 @@ from .rgb import (RGB_colourspace_limits, RGB_colourspace_volume_MonteCarlo,
 __all__ = []
 __all__ += datasets.__all__
 __all__ += ['is_within_macadam_limits']
+__all__ += ['macadam_limits']
 __all__ += ['is_within_mesh_volume']
 __all__ += ['is_within_pointer_gamut']
 __all__ += [
